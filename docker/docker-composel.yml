@@ -1,6 +1,6 @@
 #i started from https://downloads.portainer.io/ce2-18/portainer-agent-stack.yml
 #and modified from there as needed
-version: '3.9'
+version: '3.8'
 
 networks:
   portainer:
