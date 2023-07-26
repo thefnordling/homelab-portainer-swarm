@@ -2,6 +2,9 @@
 #and modified from there as needed
 version: '3.9'
 
+networks:
+  portainer:
+
 services:
   agent:
     image: portainer/agent:2.18.4-alpine
@@ -29,6 +32,3 @@ services:
       replicas: 1
       placement:
         constraints: [node.role == manager]
-
-networks:
-  portainer:
