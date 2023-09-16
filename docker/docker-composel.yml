@@ -4,6 +4,8 @@ version: '3.8'
 
 networks:
   portainer:
+  registry_net:
+    external: true
 
 services:
   agent:
@@ -27,6 +29,7 @@ services:
       - /mnt/portainer:/data
     networks:
       - portainer
+      - registry_net
     deploy:
       mode: replicated
       replicas: 1
