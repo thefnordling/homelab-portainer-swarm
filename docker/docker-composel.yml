@@ -26,6 +26,7 @@ services:
       - /mnt/portainer:/data
     networks:
       portainer-agent-net:
+      nginx-net:
     deploy:
       mode: replicated
       replicas: 1
